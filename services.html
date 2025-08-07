@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - SRSSTECHHUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold">
+                    <span class="text-blue-600">SRSS</span><span class="text-gray-800">TECHHUB</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                <a href="services.html" class="text-blue-600 font-medium">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">About</a>
+            <a href="services.html" class="block py-2 text-blue-600 font-medium">Services</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">Comprehensive IT solutions to meet all your needs</p>
+        </div>
+    </section>
+
+    <!-- IT Training -->
+    <section id="training" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-blue-600 text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">IT Training Programs</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Upskill with in-demand technologies and certifications designed by industry experts. Our training programs are tailored to meet current industry requirements and help you stay ahead in the competitive tech landscape.</p>
+                    <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">
+                        Enquire About Courses
+                    </a>
+                </div>
+                <div class="md:w-1/2 bg-blue-50 p-8 rounded-xl">
+                    <h3 class="text-xl font-bold mb-6 text-center">Training Categories</h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Full Stack Development (MERN, MEAN, Java, .NET)</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Cloud & DevOps (AWS, Azure, GCP, Docker, Kubernetes)</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Data Science & AI</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Cybersecurity</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Salesforce & CRM Tools</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Python, Java, React, Angular, and more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-6 text-center">Why Choose Our Training</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-project-diagram text-blue-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Real-time Projects</h4>
+                    <p class="text-gray-600 text-sm">Hands-on labs with industry-relevant projects</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-blue-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Expert Trainers</h4>
+                    <p class="text-gray-600 text-sm">Certified professionals with industry experience</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-laptop-house text-blue-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Flexible Learning</h4>
+                    <p class="text-gray-600 text-sm">Online/Offline modes to suit your schedule</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-file-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Career Support</h4>
+                    <p class="text-gray-600 text-sm">Resume building & mock interview sessions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Placement -->
+    <section id="placement" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-blue-600 text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">IT Placement Services</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Launch your tech career with confidence. We guide you every step of the way from skill assessment to final placement in top companies.</p>
+                    <div class="flex space-x-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">1000+</div>
+                            <div class="text-gray-600">Students Placed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">85%</div>
+                            <div class="text-gray-600">Placement Rate</div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">
+                        Join Our Placement Program
+                    </a>
+                </div>
+                <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-6">Placement Support Includes</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Career counseling & roadmap planning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Resume optimization and LinkedIn branding</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Interview preparation (HR + Technical Rounds)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Direct placement drives with top MNCs & startups</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Services -->
+    <section id="software" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-blue-600 text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Software Development & IT Services</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Accelerate your business with our scalable and secure software solutions. We deliver custom software tailored to your specific business needs.</p>
+                    <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">
+                        Request a Free Consultation
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-blue-50 p-8 rounded-xl">
+                        <h3 class="text-xl font-bold mb-6">Our Expertise</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Custom Web & Mobile Application Development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>ERP & CRM Implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Cloud Migration & Infrastructure</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>API Integrations & Microservices Architecture</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>QA & Software Testing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-6 text-center">Industries We Serve</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">EdTech</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Healthcare</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Retail</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">FinTech</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Logistics</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Real Estate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose SRSS TechHub</h2>
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-check text-xl"></i>
+                    </div>
+                    <p>Industry-Driven Curriculum</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-check text-xl"></i>
+                    </div>
+                    <p>Real-World Project Exposure</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-check text-xl"></i>
+                    </div>
+                    <p>Dedicated Mentorship</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-check text-xl"></i>
+                    </div>
+                    <p>Agile & Scalable Delivery</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-check text-xl"></i>
+                    </div>
+                    <p>Trusted by Startups to Enterprises</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="text-blue-400">SRSS</span>TECHHUB</h3>
+                    <p class="text-gray-400 mb-4">Empowering Tech Careers, Delivering Digital Excellence</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#training" class="text-gray-400 hover:text-white transition">IT Training</a></li>
+                        <li><a href="services.html#placement" class="text-gray-400 hover:text-white transition">Placement</a></li>
+                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>123 Tech Street, Bangalore, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-400"></i>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <span>info@srsstechhub.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 SRSS TechHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
