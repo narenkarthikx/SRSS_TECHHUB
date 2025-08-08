@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRSSTECHHUB - Empowering Tech Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold">
+                    <span class="text-blue-600">SRSS</span><span class="text-gray-800">TECHHUB</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 transition">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <a href="index.html" class="block py-2 text-blue-600 font-medium">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">About</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Services</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Empowering Tech Careers, Delivering Digital Excellence</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">Your trusted partner in IT Training, Career Placement & End-to-End Software Solutions.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="services.html#training" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">Explore Courses</a>
+                <a href="services.html#placement" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">Hire Our Talent</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                <span class="relative inline-block">
+                    Our Services
+                    <!-- <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform -translate-y-2"></span> -->
+                </span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-laptop-code text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">IT Training</h3>
+                        <p class="text-gray-600 mb-6">Upskill with in-demand technologies and certifications designed by industry experts.</p>
+                        <a href="services.html#training" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center justify-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-briefcase text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">IT Placement</h3>
+                        <p class="text-gray-600 mb-6">Launch your tech career with confidence. We guide you every step of the way.</p>
+                        <a href="services.html#placement" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center justify-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-server text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Software Services</h3>
+                        <p class="text-gray-600 mb-6">Accelerate your business with our scalable and secure software solutions.</p>
+                        <a href="services.html#software" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center justify-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">About SRSS TechHub</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">At SRSS TechHub, we are passionate about shaping future-ready tech professionals and delivering cutting-edge software solutions. With a strong foundation in IT training, career placement, and software development services, we bridge the gap between talent and technology.</p>
+                    <a href="about.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">
+                        Read More About Us
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="bg-blue-50 p-8 rounded-xl text-center transform transition hover:scale-105">
+                            <h3 class="text-4xl font-bold text-blue-600 mb-2">1000+</h3>
+                            <p class="text-gray-700 font-medium">Students Placed</p>
+                        </div>
+                        <div class="bg-blue-50 p-8 rounded-xl text-center transform transition hover:scale-105">
+                            <h3 class="text-4xl font-bold text-blue-600 mb-2">85%</h3>
+                            <p class="text-gray-700 font-medium">Placement Rate</p>
+                        </div>
+                        <div class="bg-blue-50 p-8 rounded-xl text-center transform transition hover:scale-105">
+                            <h3 class="text-4xl font-bold text-blue-600 mb-2">50+</h3>
+                            <p class="text-gray-700 font-medium">Industry Partners</p>
+                        </div>
+                        <div class="bg-blue-50 p-8 rounded-xl text-center transform transition hover:scale-105">
+                            <h3 class="text-4xl font-bold text-blue-600 mb-2">10+</h3>
+                            <p class="text-gray-700 font-medium">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">What Our Students & Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-gray-600 text-sm">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The training program was comprehensive and practical. I got placed at a top MNC within a month of completing my course!"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Rahul Verma</h4>
+                            <p class="text-gray-600 text-sm">DevOps Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The placement team provided excellent guidance and mock interviews that helped me crack my dream company's interview process."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Neha Patel</h4>
+                            <p class="text-gray-600 text-sm">CTO, TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"We've hired multiple candidates from SRSS TechHub. Their training quality reflects in the candidates' practical knowledge and readiness."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Tech Career or Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join hundreds of successful students and satisfied clients who trusted SRSS TechHub.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">Get Started</a>
+                <a href="tel:+919876543210" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1">
+                    <i class="fas fa-phone mr-2"></i> Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="text-blue-400">SRSS</span>TECHHUB</h3>
+                    <p class="text-gray-400 mb-4">Empowering Tech Careers, Delivering Digital Excellence</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#training" class="text-gray-400 hover:text-white transition">IT Training</a></li>
+                        <li><a href="services.html#placement" class="text-gray-400 hover:text-white transition">Placement</a></li>
+                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>123 Tech Street, Bangalore, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-400"></i>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <span>info@srsstechhub.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 SRSS TechHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
