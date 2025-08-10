@@ -147,8 +147,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Tooltip functionality
     const tooltipElements = document.querySelectorAll('[data-tooltip]');
-    tooltipElements.forEach(element => {
-        element.addEventListener('mouseenter', function() {
-            // You can add custom tooltip logic here if needed
-        });
+  tooltipElements.forEach(element => {
+    element.addEventListener('mouseenter', function() {
+        // You can add custom tooltip logic here if needed
     });
+});
+
+// Close DOMContentLoaded
+});
