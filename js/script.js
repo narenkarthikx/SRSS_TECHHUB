@@ -152,4 +152,3 @@ document.addEventListener('DOMContentLoaded', function() {
             // You can add custom tooltip logic here if needed
         });
     });
-
