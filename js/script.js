@@ -152,8 +152,4 @@ document.addEventListener('DOMContentLoaded', function() {
             // You can add custom tooltip logic here if needed
         });
     });
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> b9d17cd09996799022173b070c9d1b11af0ba809
+
