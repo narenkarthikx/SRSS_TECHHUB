@@ -1,0 +1,14 @@
+# Node modules (all dependencies installed via npm)
+node_modules/
+
+# npm cache / lock files you don't want
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: if you ever generate source maps
+*.map
