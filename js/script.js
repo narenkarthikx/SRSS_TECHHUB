@@ -38,69 +38,87 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Contact form validation
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            let isValid = true;
+   // Contact form validation and submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+        
+        // Reset errors
+        document.querySelectorAll('[id$="-error"]').forEach(el => {
+            el.classList.add('hidden');
+        });
+        
+        // Validate name
+        const name = document.getElementById('name');
+        if (!name.value.trim()) {
+            document.getElementById('name-error').classList.remove('hidden');
+            isValid = false;
+        }
+        
+        // Validate email
+        const email = document.getElementById('email-input');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.value.trim()) {
+            document.getElementById('email-error').textContent = 'Email is required';
+            document.getElementById('email-error').classList.remove('hidden');
+            isValid = false;
+        } else if (!emailRegex.test(email.value)) {
+            document.getElementById('email-error').textContent = 'Please enter a valid email';
+            document.getElementById('email-error').classList.remove('hidden');
+            isValid = false;
+        }
+        
+        // Validate message
+        const message = document.getElementById('message');
+        if (!message.value.trim()) {
+            document.getElementById('message-error').classList.remove('hidden');
+            isValid = false;
+        }
+        
+        if (isValid) {
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
             
-            // Reset errors
-            document.querySelectorAll('[id$="-error"]').forEach(el => {
-                el.classList.add('hidden');
-            });
+            // Set the hidden _replyto field value
+            document.getElementById('email').value = email.value;
             
-            // Validate name
-            const name = document.getElementById('name');
-            if (!name.value.trim()) {
-                document.getElementById('name-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            // Validate email
-            const email = document.getElementById('email');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email.value.trim()) {
-                document.getElementById('email-error').textContent = 'Email is required';
-                document.getElementById('email-error').classList.remove('hidden');
-                isValid = false;
-            } else if (!emailRegex.test(email.value)) {
-                document.getElementById('email-error').textContent = 'Please enter a valid email';
-                document.getElementById('email-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            // Validate message
-            const message = document.getElementById('message');
-            if (!message.value.trim()) {
-                document.getElementById('message-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Simulate form submission
-                const submitButton = contactForm.querySelector('button[type="submit"]');
-                submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
-                
-                setTimeout(() => {
+            // Create AJAX request
+            const formData = new FormData(contactForm);
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
                     // Show success message
                     document.getElementById('form-success').classList.remove('hidden');
-                    
-                    // Reset form
                     contactForm.reset();
-                    submitButton.disabled = false;
-                    submitButton.textContent = 'Send Message';
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        document.getElementById('form-success').classList.add('hidden');
-                    }, 5000);
-                }, 1500);
-            }
-        });
-    }
-    
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                alert('There was a problem sending your message. Please try again later.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('form-success').classList.add('hidden');
+                }, 5000);
+            });
+        }
+    });
+}
     // Sticky header effect
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
